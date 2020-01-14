@@ -6,16 +6,23 @@
   "dependencies": {
     "cypress": "^3.8.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress run --spec **/*.features",
     "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/burakkaygusuz/cypress-test.git"
   },
-  "keywords": ["cypress"],
+  "keywords": [
+    "cypress"
+  ],
   "author": "Burak Kaygusuz",
   "license": "MIT",
   "bugs": {
