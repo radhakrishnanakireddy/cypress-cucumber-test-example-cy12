@@ -8,15 +8,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/burakkaygusuz/cypress-test.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["cypress"],
+  "author": "Burak Kaygusuz",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/burakkaygusuz/cypress-test/issues"
   },
