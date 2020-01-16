@@ -1,5 +1,5 @@
 {
-  "name": "cypress-test",
+  "name": "cypress-with-cucumber",
   "version": "1.0.0",
   "description": "This is a simple project that demonstrates end-to-end testing with using cypress.io",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/burakkaygusuz/cypress-test.git"
+    "url": "git+https://github.com/burakkaygusuz/cypress-with-cucumber.git"
   },
   "keywords": [
     "cypress"
@@ -26,7 +26,7 @@
   "author": "Burak Kaygusuz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/burakkaygusuz/cypress-test/issues"
+    "url": "https://github.com/burakkaygusuz/cypress-with-cucumber/issues"
   },
-  "homepage": "https://github.com/burakkaygusuz/cypress-test#readme"
+  "homepage": "https://github.com/burakkaygusuz/cypress-with-cucumber#readme"
 }
