@@ -47,3 +47,6 @@ modules.xml
 .idea/jsLibraryMappings.xml
 .idea/.gitignore
 *.ipr
+
+# VS Code
+.vscode
