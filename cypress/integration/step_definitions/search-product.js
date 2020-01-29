@@ -1,6 +1,5 @@
 import {Given, Then, When} from "cypress-cucumber-preprocessor/steps";
 
-const BASE_URL = `https://www.amazon.com`;
 const ASIN = `B07VF88TMR`;
 const PRODUCT_NAME = `ROG Zephyrus M`;
 const SEARCH_BAR = `#twotabsearchtextbox`;
@@ -9,7 +8,7 @@ const PRODUCT_LINK_TEXT = `.a-size-medium`;
 
 
 Given(/^I open Amazon page$/, () => {
-    cy.visit(BASE_URL)
+    cy.visit(`/`)
 });
 When(/^I type ASIN$/, () => {
     cy.get(SEARCH_BAR).type(ASIN)

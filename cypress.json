@@ -1,3 +1,4 @@
 {
-  "testFiles": "**/*.{feature,features}"
+  "testFiles": "**/*.{feature,features}",
+  "baseUrl": "https://www.amazon.com"
 }
