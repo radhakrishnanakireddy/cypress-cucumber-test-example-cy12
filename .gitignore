@@ -11,6 +11,7 @@ lerna-debug.log*
 node_modules/
 jspm_packages/
 /cypress/videos/
+/cypress/screenshots/
 
 # Optional npm cache directory
 .npm
