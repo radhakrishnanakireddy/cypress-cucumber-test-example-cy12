@@ -4,7 +4,7 @@ Feature: Search the product
 
     #ASIN stands for Amazon Standard Identification Number
 
-    Given I open Amazon page
-    When I type ASIN
-    When I click search button
-    Then The product related ASIN should be listed
+    Given I open the Amazon page
+    When I type the "B07VF88TMR"
+    When I click the search button
+    Then The product which named is "ROG Zephyrus M" should be listed

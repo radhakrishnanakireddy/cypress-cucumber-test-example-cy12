@@ -2,7 +2,7 @@ import {Then, When} from "cypress-cucumber-preprocessor/steps";
 
 When(/^I click Sign in button$/, () => {
 
-    cy.get('#nav-signin-tooltip > .nav-action-button > .nav-action-inner')
+    cy.get('.nav-action-inner')
         .as(`signInButton`);
 
     cy.get(`@signInButton`).click()
