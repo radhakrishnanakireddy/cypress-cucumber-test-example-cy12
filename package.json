@@ -5,8 +5,8 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^4.4.1",
-    "cypress-cucumber-preprocessor": "^2.3.1"
+    "cypress": "^4.10.0",
+    "cypress-cucumber-preprocessor": "^2.5.3"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/integration/step_definitions"
@@ -20,7 +20,8 @@
     "url": "git+https://github.com/burakkaygusuz/cypress-with-cucumber.git"
   },
   "keywords": [
-    "cypress"
+    "cypress",
+    "cucumber"
   ],
   "author": "Burak Kaygusuz",
   "license": "MIT",
