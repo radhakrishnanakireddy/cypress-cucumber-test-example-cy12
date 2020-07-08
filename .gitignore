@@ -49,3 +49,6 @@ modules.xml
 
 ### VS Code ###
 .vscode
+
+### Cypress ###
+cypress/fixtures/example.json
