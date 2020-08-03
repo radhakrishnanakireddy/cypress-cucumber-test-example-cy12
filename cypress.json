@@ -1,4 +1,6 @@
 {
   "testFiles": "**/*.{feature,features}",
-  "baseUrl": "https://www.amazon.com"
+  "baseUrl": "https://www.amazon.com",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
 }
