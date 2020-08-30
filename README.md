@@ -1,31 +1,21 @@
+[![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
+[![npm version](https://badge.fury.io/js/cypress.svg)](https://badge.fury.io/js/cypress)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/cypress-io/cypress/blob/master/LICENSE)
+
+
 ## Cypress With Cucumber
 
-This is a simple project that demonstrates end-to-end testing in [Cypress](https://www.cypress.io/) using [Gherkin Syntax](https://cucumber.io/docs/gherkin/).
+This is a simple project that demonstrates end-to-end testing in [cypress.io](https://www.cypress.io/) using [Cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor).
 
 ### Prerequisites
 
 This project requires [Node.js](https://nodejs.org/) to run.
 
-### Installation
-
-Open the directory.
+### Commands
 
 ```sh
-cd /your/project/path
-```
-Initialize our directory as an **npm** package and create this **package.json**.
-
-```sh
-npm init -y
-```
-Install Cypress via **npm**
-
-```sh
-npm install cypress --save-dev
-```
-Open up the Cypress interface.
-
-```sh
+git clone git@github.com:burakkaygusuz/cypress-with-cucumber.git
+cd cypress-with-cucumber
 npx cypress open
 ```
 
