@@ -2,5 +2,10 @@
   "testFiles": "**/*.{feature,features}",
   "baseUrl": "https://www.amazon.com",
   "viewportWidth": 1920,
-  "viewportHeight": 1080
+  "viewportHeight": 1080,
+  "chromeWebSecurity": false,
+  "fixturesFolder": false,
+  "ignoreTestFiles": [
+    "*.js"
+  ]
 }
