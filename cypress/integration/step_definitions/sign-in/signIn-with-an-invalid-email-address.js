@@ -1,4 +1,4 @@
-import {Then, When} from "cypress-cucumber-preprocessor/steps";
+import { Then, When } from "cypress-cucumber-preprocessor/steps";
 
 When(/^I type the "([^"]*)" in email address input$/, (emailAddress) => {
     cy.get(`#ap_email`).as(`emailAddressInput`)
