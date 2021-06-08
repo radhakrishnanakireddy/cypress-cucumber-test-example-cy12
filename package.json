@@ -4,8 +4,8 @@
   "description": "This is a simple project that demonstrates end-to-end testing with using cypress.io",
   "main": "index.js",
   "devDependencies": {
-    "cypress": "^7.0.1",
-    "cypress-cucumber-preprocessor": "^4.0.3"
+    "cypress": "^7.5.0",
+    "cypress-cucumber-preprocessor": "^4.1.2"
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/integration/step_definitions"
