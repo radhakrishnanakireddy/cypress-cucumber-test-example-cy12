@@ -11,11 +11,10 @@ When(/^I type the "([^"]*)"$/, (ASIN) => {
 });
 
 When(/^I click the search button$/, () => {
-    cy.get(`.nav-search-submit > .nav-input`).as(`searchButton`)
+  cy.get(`#nav-search-submit-button`).as(`searchButton`);
     cy.get(`@searchButton`).click()
 });
 
 Then(/^The product which named is "([^"]*)" should be listed$/, (productName) => {
-    cy.get(`.a-size-medium`).as(`productLinkText`)
     cy.get(`@productLinkText`).should(`contain`, productName)
-});
+});    cy.get(`.a-size-mini`).as(`productLinkText`);
