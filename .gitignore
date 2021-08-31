@@ -10,8 +10,6 @@ lerna-debug.log*
 # Dependency directories
 node_modules/
 jspm_packages/
-/cypress/videos/
-/cypress/screenshots/
 
 # Optional npm cache directory
 .npm
@@ -51,4 +49,6 @@ modules.xml
 .vscode
 
 ### Cypress ###
-cypress/fixtures/example.json
+/cypress/fixtures/example.json
+/cypress/videos/
+/cypress/screenshots
