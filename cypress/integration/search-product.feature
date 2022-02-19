@@ -1,10 +1,10 @@
 Feature: Search the product
 
-  Scenario: with its ASIN
-    #ASIN stands for Amazon Standard Identification Number
+  Background: Navigate to the Amazon Page
     Given I open the Amazon page
-    When I type the "B07VF88TMR"
-    When I click the search button
-    Then The product which named is "ROG Zephyrus M" should be listed
 
+  Scenario: by ASIN
+    #ASIN stands for Amazon Standard Identification Number
+    When I type the "B08SJTX6PN"
     When I click the search button
+    Then The product which named is "ASUS ROG Zephyrus" should be listed

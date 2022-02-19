@@ -1,22 +1,20 @@
 import { Then, When } from "cypress-cucumber-preprocessor/steps";
+import HomePage from "../../../support/pageobjects/HomePage";
+import SignInPage from "../../../support/pageobjects/SignInPage";
 
-When(/^I click Sign in button$/, () => {
-  cy.get("#nav-signin-tooltip > .nav-action-button > .nav-action-inner").as(
-    `signInButton`
-  );
-  cy.get(`@signInButton`).click();
+const homePage = new HomePage();
+const signInPage = new SignInPage();
+
+And(/^I click Sign in button$/, () => {
+  homePage.clickSignInButton();
 });
 
 When(/^I click Continue button$/, () => {
-  cy.get(`.a-button-inner > #continue`).as(`continueButton`);
-  cy.get(`@continueButton`).click();
+  signInPage.clickContinueButton();
 });
 
 Then(/^I should see "([^"]*)" message$/, (message) => {
-  cy.get(`#auth-email-missing-alert > .a-box-inner > .a-alert-content`).as(
-    `alertMessage`
-  );
-  cy.get(`@alertMessage`).then(($alertMessage) => {
+  signInPage.getAlertMessage().then(($alertMessage) => {
     expect($alertMessage.text().trim()).to.eq(message);
   });
 });
