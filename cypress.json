@@ -5,5 +5,7 @@
   "viewportHeight": 1080,
   "chromeWebSecurity": false,
   "fixturesFolder": false,
-  "ignoreTestFiles": ["*.js"]
+  "ignoreTestFiles": [
+    "*.js"
+  ]
 }
