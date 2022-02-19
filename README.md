@@ -29,5 +29,5 @@ cd cypress-with-cucumber
 - Run the test.
 
 ```shell
-yarn install && yarn run cypress open
+yarn install && yarn run test
 ```
