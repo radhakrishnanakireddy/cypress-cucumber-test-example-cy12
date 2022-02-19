@@ -1,8 +1,10 @@
 # Cypress With Cucumber
 
-[![Cypress](https://img.shields.io/npm/v/cypress?color=33ff99&label=cypress&logo=cypress&style=for-the-badge)](https://www.cypress.io) ![Cypress Cucumber Preprocessor](https://img.shields.io/github/v/tag/TheBrainFamily/cypress-cucumber-preprocessor?color=C0C0C0&label=CYPRESS%20CUCUMBER&style=for-the-badge)
+[![Cypress](https://img.shields.io/npm/v/cypress?color=33ff99&label=cypress&logo=cypress&style=for-the-badge)](https://www.cypress.io)
+![Cypress Cucumber Preprocessor](https://img.shields.io/github/v/tag/TheBrainFamily/cypress-cucumber-preprocessor?color=C0C0C0&label=CYPRESS%20PREPROCESSOR&style=for-the-badge)
 
-This is a simple project that demonstrates end-to-end testing in [cypress.io](https://www.cypress.io/) using [Cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor).
+This is a simple project that demonstrates end-to-end testing in [cypress.io](https://www.cypress.io/)
+using [Cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor).
 
 ## Prerequisites
 
@@ -12,8 +14,20 @@ This is a simple project that demonstrates end-to-end testing in [cypress.io](ht
 
 ## Executing The Tests
 
-```sh
+- Clone the repository.
+
+```shell
 git clone git@github.com:burakkaygusuz/cypress-with-cucumber.git
+```
+
+- Change the directory.
+
+```shell
 cd cypress-with-cucumber
+```
+
+- Run the test.
+
+```shell
 yarn install && yarn run cypress open
 ```
