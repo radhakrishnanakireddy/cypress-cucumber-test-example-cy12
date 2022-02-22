@@ -1,5 +1,5 @@
 import { Then, When } from "cypress-cucumber-preprocessor/steps";
-import SignInPage from "../../../support/pageobjects/SignInPage";
+import SignInPage from "../../../support/pageobjects/signIn_page";
 
 const signInPage = new SignInPage();
 
