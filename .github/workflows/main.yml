@@ -9,10 +9,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          cache: "yarn"
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          install-command: yarn --frozen-lockfile --silent
           browser: chrome
           headless: true
           build: yarn build
+          start: yarn start
