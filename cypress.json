@@ -5,7 +5,11 @@
   "viewportHeight": 1080,
   "chromeWebSecurity": false,
   "fixturesFolder": false,
-  "ignoreTestFiles": [
-    "*.js"
-  ]
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "charts": true,
+    "reportPageTitle": "cypress-with-cucumber"
+  },
+  "ignoreTestFiles": ["*.js"]
 }
