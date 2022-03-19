@@ -8,9 +8,12 @@ using [Cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor).
 
 ## Prerequisites
 
-- This project requires [Nodejs](https://nodejs.org/en/) to run.
+Make sure you have installed all the following prerequisites on your development machine:
 
-- Install [Yarn](https://yarnpkg.com/) using this command: `npm install -g yarn`
+| OS      | Node                                       |
+|---------|--------------------------------------------|
+| Windows | `winget install -e --id OpenJS.NodeJS.LTS` |
+| macOS   | `brew install node@16`                     |
 
 ## Executing The Tests
 
@@ -29,5 +32,5 @@ cd cypress-with-cucumber
 - Run the test.
 
 ```shell
-yarn install && yarn run test
+npm install && npm run test
 ```
