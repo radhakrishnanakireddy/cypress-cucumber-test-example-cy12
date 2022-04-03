@@ -8,7 +8,7 @@ jobs:
     container: cypress/browsers:node16.14.0-slim-chrome99-ff97
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
