@@ -1,4 +1,4 @@
-# Cypress With Cucumber
+# Cypress Cucumber Test Example
 
 [![Cypress](https://img.shields.io/npm/v/cypress?color=33ff99&label=cypress&logo=cypress&style=for-the-badge)](https://www.cypress.io)
 ![Cypress Preprocessor](https://img.shields.io/npm/v/cypress-cucumber-preprocessor?label=Cucumber%20Preprocessor&style=for-the-badge)
@@ -12,7 +12,7 @@ Make sure you have installed all the following prerequisites on your development
 
 | OS      | Node                                       |
 |---------|--------------------------------------------|
-| Windows | `winget install -e --id OpenJS.NodeJS.LTS` |
+| Windows | `winget install OpenJS.NodeJS.LTS`         |
 | macOS   | `brew install node@16`                     |
 
 ## Executing The Tests
@@ -20,13 +20,13 @@ Make sure you have installed all the following prerequisites on your development
 - Clone the repository.
 
 ```shell
-git clone git@github.com:burakkaygusuz/cypress-with-cucumber.git
+git clone git@github.com:burakkaygusuz/cypress-cucumber-test-example.git
 ```
 
 - Change the directory.
 
 ```shell
-cd cypress-with-cucumber
+cd cypress-cucumber-test-example
 ```
 
 - Run the test.

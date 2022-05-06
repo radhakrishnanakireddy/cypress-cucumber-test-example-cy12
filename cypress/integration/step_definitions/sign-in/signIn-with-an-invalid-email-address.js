@@ -1,5 +1,5 @@
-import { Then, When } from "cypress-cucumber-preprocessor/steps";
-import SignInPage from "../../../support/pageobjects/signIn_page";
+import { Then, When } from '@badeball/cypress-cucumber-preprocessor';
+import SignInPage from '../../../support/pageobjects/signIn_page';
 
 const signInPage = new SignInPage();
 

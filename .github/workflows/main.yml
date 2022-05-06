@@ -1,4 +1,4 @@
-name: Cypress with Cucumber
+name: Cypress Cucumber Test Example
 
 on: [push]
 
@@ -6,7 +6,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node16.13.2-chrome100-ff98
+      image: cypress/included:9.6.0
     steps:
       - name: Checkout
         uses: actions/checkout@v3

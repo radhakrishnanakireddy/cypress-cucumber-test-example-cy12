@@ -1,6 +1,10 @@
-const cucumber = require("cypress-cucumber-preprocessor").default;
+const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
+const { createEsbuildPlugin } = require('@badeball/cypress-cucumber-preprocessor/esbuild');
 
 module.exports = (on, config) => {
-  on("file:preprocessor", cucumber());
-  require("cypress-mochawesome-reporter/plugin")(on);
+  require('cypress-mochawesome-reporter/plugin')(on);
+  const bundler = createBundler({
+    plugins: [createEsbuildPlugin(config)],
+  });
+  on('file:preprocessor', bundler);
 };

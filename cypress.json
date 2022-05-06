@@ -1,5 +1,5 @@
 {
-  "testFiles": "**/*.{feature,features}",
+  "testFiles": "**/*.feature",
   "baseUrl": "https://www.amazon.com",
   "viewportWidth": 1920,
   "viewportHeight": 1080,
@@ -9,7 +9,7 @@
   "reporterOptions": {
     "reportDir": "cypress/report",
     "charts": true,
-    "reportPageTitle": "cypress-with-cucumber"
+    "reportPageTitle": "cypress-cucumber-test-example"
   },
   "ignoreTestFiles": ["*.js"]
 }
