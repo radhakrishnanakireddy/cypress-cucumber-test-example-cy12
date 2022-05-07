@@ -6,7 +6,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     container:
-      image: cypress/included:9.6.0
+      image: cypress/browsers:node16.14.2-slim-chrome100-ff99-edge
     steps:
       - name: Checkout
         uses: actions/checkout@v3
