@@ -9,7 +9,8 @@
   "reporterOptions": {
     "reportDir": "cypress/report",
     "charts": true,
-    "reportPageTitle": "cypress-cucumber-test-example"
+    "reportPageTitle": "Cypress Cucumber Test Example",
+    "overwrite": true
   },
   "ignoreTestFiles": ["*.js"]
 }
