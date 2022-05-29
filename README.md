@@ -1,10 +1,11 @@
 # Cypress Cucumber Test Example
 
 [![Cypress](https://img.shields.io/npm/v/cypress?color=33ff99&label=cypress&logo=cypress&style=for-the-badge)](https://www.cypress.io)
-![Cypress Preprocessor](https://img.shields.io/npm/v/cypress-cucumber-preprocessor?label=Cucumber%20Preprocessor&style=for-the-badge)
+![Cucumber](https://img.shields.io/npm/v/@cucumber/cucumber?color=%231dbb68&label=cucumber&logo=cucumber&style=for-the-badge)
+![Cucumber Preprocessor](https://img.shields.io/npm/v/@badeball/cypress-cucumber-preprocessor?label=Cucumber%20preprocessor&style=for-the-badge)
 
 This is a simple project that demonstrates end-to-end testing in [cypress.io](https://www.cypress.io/)
-using [Cucumber](https://www.npmjs.com/package/cypress-cucumber-preprocessor).
+using [cucumber preprocessor](https://www.npmjs.com/package/@badeball/cypress-cucumber-preprocessor).
 
 ## Prerequisites
 
