@@ -15,7 +15,7 @@ module.exports = defineConfig({
       });
       on('file:preprocessor', bundler);
     },
-    specPattern: 'cypress/e2e/**/*.feature',
+    specPattern: '**/*.feature',
     baseUrl: 'https://www.amazon.com',
     excludeSpecPattern: ['*.js'],
   },
