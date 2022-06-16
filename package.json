@@ -38,6 +38,6 @@
   },
   "homepage": "https://github.com/burakkaygusuz/cypress-cucumber-test-example#readme",
   "dependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^11.0.0-rc1"
+    "@badeball/cypress-cucumber-preprocessor": "^11.0.0"
   }
 }
