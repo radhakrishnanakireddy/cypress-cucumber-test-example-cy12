@@ -11,7 +11,7 @@
     "eslint": "^8.16.0",
     "eslint-plugin-chai-friendly": "^0.7.2",
     "eslint-plugin-cypress": "^2.12.1",
-    "prettier": "2.6.2"
+    "prettier": "^2.7.1"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}"
