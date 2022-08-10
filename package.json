@@ -17,10 +17,9 @@
     "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}"
   },
   "scripts": {
-    "test": "cypress run --spec **/*.feature",
-    "cypress:open": "cypress open",
-    "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:firefox": "cypress run --browser firefox"
+    "test": "cypress run --e2e --browser chrome --spec **/*.feature",
+    "cypress:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run --e2e --browser chrome",
   },
   "repository": {
     "type": "git",
