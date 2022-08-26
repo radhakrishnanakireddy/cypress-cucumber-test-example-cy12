@@ -1,10 +1,11 @@
 class HomePage {
   clickSignInButton() {
-    return cy
-      .get('#nav-signin-tooltip > .nav-action-button > .nav-action-inner')
+    cy.get('#nav-signin-tooltip > .nav-action-button > .nav-action-inner')
+      .as('signInButton')
+      .trigger('mouseover')
       .should('be.visible')
       .click();
   }
 }
 
-export default HomePage;
+export default new HomePage();
