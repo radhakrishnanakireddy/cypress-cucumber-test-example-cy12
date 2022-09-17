@@ -1,6 +1,18 @@
 const { defineConfig } = require('cypress');
 const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
-const { createEsbuildPlugin } = require('@badeball/cypress-cucumber-preprocessor/esbuild');
+const preprocessor = require('@badeball/cypress-cucumber-preprocessor');
+const createEsbuildPlugin = require('@badeball/cypress-cucumber-preprocessor/esbuild');
+
+const setupNodeEvents = async (on, config) => {
+  await preprocessor.addCucumberPreprocessorPlugin(on, config);
+  on(
+    'file:preprocessor',
+    createBundler({
+      plugins: [createEsbuildPlugin.default(config)],
+    }),
+  );
+  return config;
+};
 
 module.exports = defineConfig({
   viewportWidth: 1920,
@@ -9,12 +21,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   fixturesFolder: false,
   e2e: {
-    setupNodeEvents(on, config) {
-      const bundler = createBundler({
-        plugins: [createEsbuildPlugin(config)],
-      });
-      on('file:preprocessor', bundler);
-    },
+    setupNodeEvents,
     specPattern: '**/*.feature',
     baseUrl: 'https://www.amazon.com',
     excludeSpecPattern: ['*.js'],
