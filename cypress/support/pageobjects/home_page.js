@@ -4,7 +4,7 @@ class HomePage {
       .as('signInButton')
       .trigger('mouseover')
       .should('be.visible')
-      .click();
+      .click({ force: true });
   }
 }
 
