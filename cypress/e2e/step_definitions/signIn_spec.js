@@ -1,4 +1,4 @@
-import { Given, Then, When, And } from '@badeball/cypress-cucumber-preprocessor';
+import { Given, Then, When } from '@badeball/cypress-cucumber-preprocessor';
 import homePage from '../../support/pageobjects/home_page';
 import signInPage from '../../support/pageobjects/signIn_page';
 
@@ -7,7 +7,7 @@ Given(/^open the ([^"]*) page$/, (page) => {
   cy.title().should('include', page);
 });
 
-And(/^click on sign in button$/, () => {
+When(/^click on sign in button$/, () => {
   homePage.clickSignInButton();
 });
 
