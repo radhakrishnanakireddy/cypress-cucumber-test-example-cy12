@@ -8,7 +8,7 @@
     "@cucumber/cucumber": "^8.5.2",
     "@faker-js/faker": "^7.5.0",
     "cypress": "^10.8.0",
-    "esbuild": "^0.15.5",
+    "esbuild": "^0.15.9",
     "eslint": "^8.24.0",
     "eslint-plugin-chai-friendly": "^0.7.2",
     "eslint-plugin-cypress": "^2.12.1",
