@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "@cucumber/cucumber": "^8.5.2",
+    "@cucumber/cucumber": "^8.6.0",
     "@faker-js/faker": "^7.5.0",
     "cypress": "^10.8.0",
     "esbuild": "^0.15.9",
