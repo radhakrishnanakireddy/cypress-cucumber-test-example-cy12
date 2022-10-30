@@ -1,6 +1,8 @@
 class HomePage {
   clickSignInButton() {
-    cy.get("div[id='nav-signin-tooltip'] span[class='nav-action-inner']")
+    cy.get('#nav-signin-tooltip')
+      .find('span')
+      .should('be.visible')
       .as('signInButton')
       .click({ force: true });
   }

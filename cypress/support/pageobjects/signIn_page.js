@@ -11,15 +11,18 @@ class SignInPage {
   }
 
   clickContinueButton() {
-    cy.get('.a-button-inner > #continue').should('be.visible').click({ force: true });
+    cy.get('#continue').should('be.visible').click();
   }
 
   getAlertMessage() {
-    cy.get('#auth-email-missing-alert').should('be.visible').as('alertMessage');
+    cy.get('#auth-email-missing-alert')
+      .find('.a-alert-content')
+      .should('be.visible')
+      .as('alertMessage');
   }
 
   getErrorMessage() {
-    cy.get('.a-list-item').should('be.visible').as('errorMessage');
+    cy.get('#auth-error-message-box').find('.a-list-item').should('be.visible').as('errorMessage');
   }
 }
 
