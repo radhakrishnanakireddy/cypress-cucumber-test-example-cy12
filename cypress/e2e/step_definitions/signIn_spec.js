@@ -9,14 +9,14 @@ Given(/^open the ([^"]*) page$/, (page) => {
 
 When(/^click on sign in button$/, () => {
   homePage.clickSignInButton();
+
+  cy.location().should((loc) => {
+    expect(loc.pathname).contains('signin');
+  });
 });
 
 When(/^click on continue button$/, () => {
   signInPage.clickContinueButton();
-
-  cy.location().should((location) => {
-    expect(location.pathname).contains('signin');
-  });
 });
 
 Then(/^The alert message should be given to user as ([^"]*)$/, (message) => {
