@@ -1,3 +1,7 @@
 {
-  "include": ["./node_modules/cypress", "cypress/**/*.js"]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2021"
+  },
+  "include": ["./node_modules/cypress", "cypress/**/*.js", "cypress/types/*.d.ts"]
 }
