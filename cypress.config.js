@@ -21,6 +21,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   fixturesFolder: false,
   e2e: {
+    hideXHRInCommandLog: true,
     setupNodeEvents,
     specPattern: '**/*.feature',
     baseUrl: 'https://www.amazon.com',
