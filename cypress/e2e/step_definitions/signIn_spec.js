@@ -1,6 +1,6 @@
 import { Given, Then, When } from '@badeball/cypress-cucumber-preprocessor';
-import homePage from '../../support/pageobjects/home_page';
-import signInPage from '../../support/pageobjects/signIn_page';
+import homePage from '../../support/pages/home_page';
+import signInPage from '../../support/pages/signIn_page';
 
 Given(/^open the ([^"]*) page$/, (page) => {
   cy.visit('/');
