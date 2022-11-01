@@ -19,6 +19,7 @@
   },
   "scripts": {
     "test": "cypress run --e2e --browser chrome --spec **/*.feature",
+    "pretty": "prettier --write \"./**/*.{yml,js,jsx,json}\"",
     "cy:open": "cypress open --e2e --browser chrome"
   },
   "repository": {
